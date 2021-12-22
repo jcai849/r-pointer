@@ -1,4 +1,0 @@
-segfault R with dereference:
-
-Why is the address not preserved, if SEXPs are really pointers?
-Do I have to copy SEXPs every time I want to hold onto them outside of a particular frame?

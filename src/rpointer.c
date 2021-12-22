@@ -8,10 +8,6 @@ SEXP C_ref(SEXP val)
 
 SEXP C_deref(SEXP pointer)
 {
-    SEXP *pval;
-    SEXP val;
-    pval = R_ExternalPtrAddr(pointer);
-    val = *pval;
-    R_ReleaseObject(val);
+    SEXP val = (SEXP) R_ExternalPtrAddr(pointer);
     return val;
 }
