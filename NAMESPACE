@@ -1,0 +1,3 @@
+useDynLib(rpointer,
+          C_ref, C_deref)
+export(ref, deref)
